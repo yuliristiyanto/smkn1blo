@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistem Pembelajaran SMK Negeri 1 Bulukerto - Dasar-Dasar PPLG</title>
+    <title>Sistem Pembelajaran SMK Negeri 1 Bulukerto - Dasar-Dasar PPLG & Deep Learning</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts: Inter -->
@@ -34,6 +34,22 @@
         .card-shadow {
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
         }
+        /* Responsive iframe for YouTube */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 0.5rem; /* rounded-lg */
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -42,7 +58,7 @@
         <div class="container mx-auto flex justify-between items-center">
             <a href="#" class="flex items-center space-x-2">
                 <i class="fas fa-graduation-cap text-3xl text-indigo-600"></i>
-                <span class="text-xl md:text-2xl font-bold text-gray-800">SMK N 1 Bulukerto - Dasar-Dasar PPLG</span>
+                <span class="text-xl md:text-2xl font-bold text-gray-800">SMK N 1 Bulukerto - Dasar-Dasar PPLG & Deep Learning</span>
             </a>
             <nav class="hidden md:flex space-x-8">
                 <a href="#" class="text-gray-600 hover:text-indigo-600 font-medium">Beranda</a>
@@ -209,18 +225,82 @@
             </div>
         </section>
 
-        <!-- Testimonials Section (Optional) -->
+        <!-- PPLG Video Content Section -->
         <section class="py-16 px-6 md:px-12 bg-white rounded-xl mx-auto max-w-6xl card-shadow mb-12">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 section-title">
+                    Video Pembelajaran Pengembangan Perangkat Lunak & Gim (Dihadirkan oleh AI)
+                </h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Video 1: Pengantar Pemrograman -->
+                    <div class="bg-gray-50 p-4 rounded-lg card-shadow">
+                        <div class="video-container mb-4">
+                            <iframe src="https://www.youtube.com/embed/nC64A626lqE?si=9l9K1E4N9q1o9VpY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Dasar-Dasar Pemrograman (AI-Powered)</h3>
+                        <p class="text-gray-700 text-sm">Pahami konsep fundamental dalam dunia pemrograman, disajikan dengan penjelasan yang mudah dicerna.</p>
+                    </div>
+
+                    <!-- Video 2: Pengenalan Pengembangan Game -->
+                    <div class="bg-gray-50 p-4 rounded-lg card-shadow">
+                        <div class="video-container mb-4">
+                            <iframe src="https://www.youtube.com/embed/zH70U47iH9c?si=Rj3k2x0C0i1m5P1q" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Memulai Pengembangan Game (AI-Enhanced)</h3>
+                        <p class="text-gray-700 text-sm">Jelajahi langkah awal dalam merancang dan mengembangkan game interaktif dari nol.</p>
+                    </div>
+
+                    <!-- Video 3: Pengembangan Web Dasar -->
+                    <div class="bg-gray-50 p-4 rounded-lg card-shadow">
+                        <div class="video-container mb-4">
+                            <iframe src="https://www.youtube.com/embed/Ezc04J3sXqc?si=uR4wL5zN4k5n9T6X" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Pengembangan Web untuk Pemula (Konten AI)</h3>
+                        <p class="text-gray-700 text-sm">Pelajari HTML, CSS, dan JavaScript untuk membangun website pertama Anda.</p>
+                    </div>
+
+                    <!-- Video 4: Dasar-Dasar Pengembangan Aplikasi Mobile -->
+                    <div class="bg-gray-50 p-4 rounded-lg card-shadow">
+                        <div class="video-container mb-4">
+                            <iframe src="https://www.youtube.com/embed/ApG69lR851s?si=m_1C_5g6T6y7C8qW" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Panduan Pengembangan Aplikasi Mobile (Sistem AI)</h3>
+                        <p class="text-gray-700 text-sm">Memulai perjalanan Anda dalam membuat aplikasi untuk perangkat seluler.</p>
+                    </div>
+
+                    <!-- Video 5: Prinsip Desain Game -->
+                    <div class="bg-gray-50 p-4 rounded-lg card-shadow">
+                        <div class="video-container mb-4">
+                            <iframe src="https://www.youtube.com/embed/T6_P2z0t39c?si=hC7P2q0P6sD0v1C1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Prinsip Desain Game Efektif (Rekomendasi AI)</h3>
+                        <p class="text-gray-700 text-sm">Pahami elemen kunci untuk menciptakan pengalaman bermain game yang menarik dan berkesan.</p>
+                    </div>
+
+                    <!-- Video 6: Algoritma dan Struktur Data -->
+                    <div class="bg-gray-50 p-4 rounded-lg card-shadow">
+                        <div class="video-container mb-4">
+                            <iframe src="https://www.youtube.com/embed/i0i0eXm4j40?si=Oa1p2V2Q7K1c6B4K" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Algoritma & Struktur Data (Dioptimalkan AI)</h3>
+                        <p class="text-gray-700 text-sm">Pelajari fondasi pemecahan masalah dalam ilmu komputer untuk kode yang efisien.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section (Optional) -->
+        <section class="py-16 px-6 md:px-12 bg-indigo-50 rounded-xl mx-auto max-w-6xl card-shadow mb-12">
             <div class="container mx-auto">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 section-title">
                     Apa Kata Mereka?
                 </h2>
                 <div class="grid md:grid-cols-2 gap-8">
-                    <div class="bg-gray-50 p-6 rounded-lg card-shadow">
+                    <div class="bg-white p-6 rounded-lg card-shadow">
                         <p class="text-gray-700 italic mb-4">"Platform ini sangat membantu saya memahami Deep Learning dari nol. Materi yang disajikan relevan dengan kebutuhan industri dan mudah dipahami."</p>
                         <p class="font-semibold text-right text-gray-800">— Ibu Ani, Guru SMK PPLG Jakarta</p>
                     </div>
-                    <div class="bg-gray-50 p-6 rounded-lg card-shadow">
+                    <div class="bg-white p-6 rounded-lg card-shadow">
                         <p class="text-gray-700 italic mb-4">"Saya jadi lebih percaya diri dalam membimbing proyek siswa yang berkaitan dengan AI setelah mengikuti modul-modul di sini."</p>
                         <p class="font-semibold text-right text-gray-800">— Bapak Budi, Guru SMK PPLG Bandung</p>
                     </div>
@@ -229,13 +309,13 @@
         </section>
 
         <!-- Latest News Section -->
-        <section class="py-16 px-6 md:px-12 bg-indigo-50 rounded-xl mx-auto max-w-6xl card-shadow mb-12">
+        <section class="py-16 px-6 md:px-12 bg-white rounded-xl mx-auto max-w-6xl card-shadow mb-12">
             <div class="container mx-auto">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 section-title">
                     Berita Terbaru & Pengumuman
                 </h2>
                 <div class="space-y-6">
-                    <div class="bg-white p-6 rounded-lg flex flex-col md:flex-row items-center card-shadow">
+                    <div class="bg-gray-50 p-6 rounded-lg flex flex-col md:flex-row items-center card-shadow">
                         <i class="fas fa-bullhorn text-3xl text-indigo-500 mr-4 mb-4 md:mb-0"></i>
                         <div>
                             <h3 class="text-xl font-semibold text-gray-900 mb-2">Webinar: "Menerapkan Transfer Learning dalam Proyek Deep Learning Siswa"</h3>
@@ -243,7 +323,7 @@
                             <a href="#" class="text-indigo-600 hover:underline mt-2 inline-block">Daftar Sekarang <i class="fas fa-external-link-alt ml-1 text-sm"></i></a>
                         </div>
                     </div>
-                    <div class="bg-white p-6 rounded-lg flex flex-col md:flex-row items-center card-shadow">
+                    <div class="bg-gray-50 p-6 rounded-lg flex flex-col md:flex-row items-center card-shadow">
                         <i class="fas fa-plus-circle text-3xl text-green-500 mr-4 mb-4 md:mb-0"></i>
                         <div>
                             <h3 class="text-xl font-semibold text-gray-900 mb-2">Modul Baru Tersedia: "Pengembangan Game AI dengan Reinforcement Learning"</h3>
@@ -251,7 +331,7 @@
                             <a href="#" class="text-indigo-600 hover:underline mt-2 inline-block">Lihat Modul <i class="fas fa-external-link-alt ml-1 text-sm"></i></a>
                         </div>
                     </div>
-                    <div class="bg-white p-6 rounded-lg flex flex-col md:flex-row items-center card-shadow">
+                    <div class="bg-gray-50 p-6 rounded-lg flex flex-col md:flex-row items-center card-shadow">
                         <i class="fas fa-sync-alt text-3xl text-orange-500 mr-4 mb-4 md:mb-0"></i>
                         <div>
                             <h3 class="text-xl font-semibold text-gray-900 mb-2">Pembaruan Kurikulum Merdeka PPLG: Penekanan pada Big Data dan Deep Learning</h3>
