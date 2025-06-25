@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Pembelajaran Guru SMK PPLG - Deep Learning</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8faff; /* Light background */
+            color: #333;
+        }
+        .gradient-bg {
+            background: linear-gradient(to right, #4a90e2, #50b0f0); /* Blue gradient */
+        }
+        .btn-primary {
+            background-color: #4a90e2; /* Blue */
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #3a7bd5; /* Darker blue on hover */
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .section-title {
+            color: #2c3e50; /* Darker title color */
+        }
+        .card-shadow {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header -->
+    <header class="bg-white shadow-md py-4 px-6 md:px-12">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-2">
+                <i class="fas fa-graduation-cap text-3xl text-indigo-600"></i>
+                <span class="text-2xl font-bold text-gray-800">SMK PPLG - Deep Learning</span>
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#" class="text-gray-600 hover:text-indigo-600 font-medium">Beranda</a>
+                <a href="#" class="text-gray-600 hover:text-indigo-600 font-medium">Modul</a>
+                <a href="#" class="text-gray-600 hover:text-indigo-600 font-medium">Komunitas</a>
+                <a href="#" class="text-gray-600 hover:text-indigo-600 font-medium">Tentang Kami</a>
+                <a href="#" class="text-gray-600 hover:text-indigo-600 font-medium">Kontak</a>
+            </nav>
+            <div class="md:hidden">
+                <!-- Mobile Menu Button (Hamburger) -->
+                <button class="text-gray-600 hover:text-indigo-600 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="gradient-bg text-white py-20 px-6 md:px-12 text-center rounded-b-xl mb-12">
+            <div class="container mx-auto">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-4 animate-fade-in">
+                    Selamat Datang, Para Inovator Pendidikan!
+                </h1>
+                <p class="text-lg md:text-xl lg:text-2xl mb-8 opacity-90 animate-fade-in-up">
+                    Platform Pembelajaran Deep Learning untuk Guru SMK PPLG Kurikulum Merdeka.
+                </p>
+                <div class="max-w-3xl mx-auto mb-10">
+                    <img src="https://placehold.co/1200x600/6A7BFF/FFFFFF?text=Ilustrasi+Guru+dan+Siswa+Belajar+AI" alt="Ilustrasi Guru dan Siswa Belajar AI" class="rounded-xl shadow-lg w-full h-auto">
+                </div>
+                <a href="#" class="btn-primary inline-block px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition duration-300">
+                    Mulai Belajar Sekarang <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Why Deep Learning Section -->
+        <section class="py-16 px-6 md:px-12 bg-white rounded-xl mx-auto max-w-6xl card-shadow mb-12">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 section-title">
+                    Mengapa Deep Learning Penting untuk Guru SMK PPLG?
+                </h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-gray-50 p-6 rounded-lg text-center card-shadow">
+                        <i class="fas fa-code text-5xl text-indigo-500 mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-3">Materi Ajar Relevan</h3>
+                        <p class="text-gray-700">Membawa materi ajar yang lebih relevan dan futuristik sesuai dengan perkembangan industri.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg text-center card-shadow">
+                        <i class="fas fa-lightbulb text-5xl text-indigo-500 mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-3">Bimbingan Proyek Inovatif</h3>
+                        <p class="text-gray-700">Membimbing siswa dalam proyek-proyek inovatif yang berbasis Kecerdasan Buatan.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg text-center card-shadow">
+                        <i class="fas fa-chart-line text-5xl text-indigo-500 mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-3">Persiapan Karir Masa Depan</h3>
+                        <p class="text-gray-700">Mempersiapkan siswa untuk karir di bidang teknologi yang berkembang pesat.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg text-center card-shadow">
+                        <i class="fas fa-laptop-code text-5xl text-indigo-500 mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-3">Pengembangan Diri Adaptif</h3>
+                        <p class="text-gray-700">Mengembangkan kompetensi diri sebagai pendidik yang adaptif dan visioner.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg text-center card-shadow">
+                        <i class="fas fa-robot text-5xl text-indigo-500 mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-3">Aplikasi Cerdas & Gim</h3>
+                        <p class="text-gray-700">Mampu mengintegrasikan AI dalam pengembangan aplikasi cerdas dan gim.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg text-center card-shadow">
+                        <i class="fas fa-book-open text-5xl text-indigo-500 mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-3">Sesuai Kurikulum Merdeka</h3>
+                        <p class="text-gray-700">Mendukung implementasi Kurikulum Merdeka dengan materi Deep Learning yang relevan.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What You'll Find Section -->
+        <section class="py-16 px-6 md:px-12 bg-indigo-50 rounded-xl mx-auto max-w-6xl card-shadow mb-12">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 section-title">
+                    Apa yang Akan Anda Temukan di Platform Ini?
+                </h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="flex items-start bg-white p-6 rounded-lg card-shadow">
+                        <i class="fas fa-book-reader text-4xl text-green-500 mr-4 mt-1"></i>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Modul Pembelajaran Interaktif</h3>
+                            <p class="text-gray-700">Pelajari konsep dasar hingga tingkat lanjut Deep Learning dengan materi yang mudah dicerna.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start bg-white p-6 rounded-lg card-shadow">
+                        <i class="fas fa-project-diagram text-4xl text-red-500 mr-4 mt-1"></i>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Studi Kasus Proyek Nyata</h3>
+                            <p class="text-gray-700">Telusuri implementasi Deep Learning dalam pengembangan perangkat lunak dan gim yang nyata.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start bg-white p-6 rounded-lg card-shadow">
+                        <i class="fas fa-video text-4xl text-purple-500 mr-4 mt-1"></i>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Video Tutorial & Webinar</h3>
+                            <p class="text-gray-700">Ikuti panduan langkah demi langkah dari para ahli dan berpartisipasi dalam diskusi interaktif.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start bg-white p-6 rounded-lg card-shadow">
+                        <i class="fas fa-users text-4xl text-blue-500 mr-4 mt-1"></i>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Forum Komunitas Guru</h3>
+                            <p class="text-gray-700">Berinteraksi, berbagi pengalaman, dan berkolaborasi dengan rekan-rekan guru.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start bg-white p-6 rounded-lg card-shadow">
+                        <i class="fas fa-clipboard-check text-4xl text-yellow-500 mr-4 mt-1"></i>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Bank Soal & Penilaian</h3>
+                            <p class="text-gray-700">Sumber daya untuk mengukur pemahaman siswa dan merancang evaluasi yang efektif.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start bg-white p-6 rounded-lg card-shadow">
+                        <i class="fas fa-lightbulb text-4xl text-orange-500 mr-4 mt-1"></i>
+                        <div>
+                            <h3 class="text-xl font-semibold mb-2">Update Kurikulum Merdeka</h3>
+                            <p class="text-gray-700">Informasi terkini dan panduan implementasi Deep Learning dalam kurikulum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section (Optional) -->
+        <section class="py-16 px-6 md:px-12 bg-white rounded-xl mx-auto max-w-6xl card-shadow mb-12">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 section-title">
+                    Apa Kata Mereka?
+                </h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-gray-50 p-6 rounded-lg card-shadow">
+                        <p class="text-gray-700 italic mb-4">"Platform ini sangat membantu saya memahami Deep Learning dari nol. Materi yang disajikan relevan dengan kebutuhan industri dan mudah dipahami."</p>
+                        <p class="font-semibold text-right text-gray-800">— Ibu Ani, Guru SMK PPLG Jakarta</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg card-shadow">
+                        <p class="text-gray-700 italic mb-4">"Saya jadi lebih percaya diri dalam membimbing proyek siswa yang berkaitan dengan AI setelah mengikuti modul-modul di sini."</p>
+                        <p class="font-semibold text-right text-gray-800">— Bapak Budi, Guru SMK PPLG Bandung</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest News Section -->
+        <section class="py-16 px-6 md:px-12 bg-indigo-50 rounded-xl mx-auto max-w-6xl card-shadow mb-12">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 section-title">
+                    Berita Terbaru & Pengumuman
+                </h2>
+                <div class="space-y-6">
+                    <div class="bg-white p-6 rounded-lg flex flex-col md:flex-row items-center card-shadow">
+                        <i class="fas fa-bullhorn text-3xl text-indigo-500 mr-4 mb-4 md:mb-0"></i>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Webinar: "Menerapkan Transfer Learning dalam Proyek Deep Learning Siswa"</h3>
+                            <p class="text-gray-700">Tanggal: 20 Agustus 2025 | Segera daftar untuk menguasai teknik transfer learning!</p>
+                            <a href="#" class="text-indigo-600 hover:underline mt-2 inline-block">Daftar Sekarang <i class="fas fa-external-link-alt ml-1 text-sm"></i></a>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg flex flex-col md:flex-row items-center card-shadow">
+                        <i class="fas fa-plus-circle text-3xl text-green-500 mr-4 mb-4 md:mb-0"></i>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Modul Baru Tersedia: "Pengembangan Game AI dengan Reinforcement Learning"</h3>
+                            <p class="text-gray-700">Pelajari cara membangun AI yang cerdas untuk gim menggunakan Reinforcement Learning.</p>
+                            <a href="#" class="text-indigo-600 hover:underline mt-2 inline-block">Lihat Modul <i class="fas fa-external-link-alt ml-1 text-sm"></i></a>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg flex flex-col md:flex-row items-center card-shadow">
+                        <i class="fas fa-sync-alt text-3xl text-orange-500 mr-4 mb-4 md:mb-0"></i>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Pembaruan Kurikulum Merdeka PPLG: Penekanan pada Big Data dan Deep Learning</h3>
+                            <p class="text-gray-700">Informasi terbaru mengenai integrasi Big Data dan Deep Learning dalam kurikulum.</p>
+                            <a href="#" class="text-indigo-600 hover:underline mt-2 inline-block">Baca Selengkapnya <i class="fas fa-external-link-alt ml-1 text-sm"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners Section (Optional) -->
+        <section class="py-16 px-6 md:px-12 text-center">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 section-title">
+                    Mitra Kami
+                </h2>
+                <div class="flex flex-wrap justify-center items-center gap-8">
+                    <img src="https://placehold.co/150x80/E0F2F7/2C3E50?text=Logo+Mitra+1" alt="Logo Mitra 1" class="h-16 w-auto opacity-75 hover:opacity-100 transition-opacity duration-300">
+                    <img src="https://placehold.co/150x80/E0F2F7/2C3E50?text=Logo+Mitra+2" alt="Logo Mitra 2" class="h-16 w-auto opacity-75 hover:opacity-100 transition-opacity duration-300">
+                    <img src="https://placehold.co/150x80/E0F2F7/2C3E50?text=Logo+Mitra+3" alt="Logo Mitra 3" class="h-16 w-auto opacity-75 hover:opacity-100 transition-opacity duration-300">
+                    <img src="https://placehold.co/150x80/E0F2F7/2C3E50?text=Logo+Mitra+4" alt="Logo Mitra 4" class="h-16 w-auto opacity-75 hover:opacity-100 transition-opacity duration-300">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10 px-6 md:px-12 rounded-t-xl mt-12">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-xl font-bold mb-4">SMK PPLG - Deep Learning</h3>
+                <p class="text-gray-400">Membentuk guru inovatif untuk siswa berprestasi di era teknologi.</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Tautan Cepat</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-white">Beranda</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Modul Pembelajaran</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">Komunitas</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Hubungi Kami</h3>
+                <p class="text-gray-400"><i class="fas fa-envelope mr-2"></i> info@smkdeeplearning.id</p>
+                <p class="text-gray-400"><i class="fas fa-phone mr-2"></i> +62 812-3456-7890</p>
+                <div class="flex space-x-4 mt-4">
+                    <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-500">
+            &copy; 2025 SMK PPLG - Deep Learning. Hak Cipta Dilindungi Undang-Undang.
+        </div>
+    </footer>
+</body>
+</html>
